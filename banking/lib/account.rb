@@ -2,13 +2,10 @@
 
 class Account
 
-  def initialize(starting_balance = 0.0)
-    @starting_balance = starting_balance
-  end
+  attr_reader :balance
 
-  def balance
-    0.00
-    return @starting_balance
+  def initialize(starting_balance = 0.0)
+    @balance = starting_balance
   end
 
 end
